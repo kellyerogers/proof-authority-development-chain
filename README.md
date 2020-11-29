@@ -4,77 +4,77 @@ A custom development chain, with documentation for others on how to start it usi
 # How to Start the Network
 The network setup for this blockchain is named thissucks (a name chosen after 11 previous attempts to spin up a working blockchain that I could successfully run a transaction on; of course this time, it worked!). You can see all the information regarding the setup of this network below for reference.
 <code>
-Please specify a network name to administer (no spaces, hyphens or capital letters please)
+> Please specify a network name to administer (no spaces, hyphens or capital letters please)
 > thissucks
-
-Sweet, you can set this via --network=thissucks next time!
-
-INFO [11-25|22:34:06.898] Administering Ethereum network           name=thissucks
-WARN [11-25|22:34:06.901] No previous configurations found         path=/Users/kellyerogers/.puppeth/thissucks
-
-What would you like to do? (default = stats)
- 1. Show network stats
- 2. Configure new genesis
- 3. Track new remote server
- 4. Deploy network components
-> 2
-
-What would you like to do? (default = create)
- 1. Create new genesis from scratch
- 2. Import already existing genesis
-> 1
-
-Which consensus engine to use? (default = clique)
- 1. Ethash - proof-of-work
- 2. Clique - proof-of-authority
-> 2
-
-How many seconds should blocks take? (default = 15)
 > 
-
-Which accounts are allowed to seal? (mandatory at least one)
+> Sweet, you can set this via --network=thissucks next time!
+> 
+> INFO [11-25|22:34:06.898] Administering Ethereum network           name=thissucks
+> WARN [11-25|22:34:06.901] No previous configurations found         path=/Users/kellyerogers/.puppeth/thissucks
+> 
+> What would you like to do? (default = stats)
+>  1. Show network stats
+>  2. Configure new genesis
+>  3. Track new remote server
+>  4. Deploy network components
+> > 2
+> 
+> What would you like to do? (default = create)
+>  1. Create new genesis from scratch
+>  2. Import already existing genesis
+> > 1
+> 
+> Which consensus engine to use? (default = clique)
+>  1. Ethash - proof-of-work
+>  2. Clique - proof-of-authority
+> > 2
+> 
+> How many seconds should blocks take? (default = 15)
+> > default 
+> 
+> Which accounts are allowed to seal? (mandatory at least one)
 > 0xB23A872E68A9Af470ccB41099310FC1C09F2a268
 > 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC
 > 0x
-
-Which accounts should be pre-funded? (advisable at least one)
-> 0xB23A872E68A9Af470ccB41099310FC1C09F2a268
-> 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC
-> 0x
-
-Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)
-> no
-
-Specify your chain/network ID if you want an explicit one (default = random)
-> 888
-INFO [11-25|22:36:10.312] Configured new genesis block 
-
-What would you like to do? (default = stats)
- 1. Show network stats
- 2. Manage existing genesis
- 3. Track new remote server
- 4. Deploy network components
-> 2
-
- 1. Modify existing configurations
- 2. Export genesis configurations
- 3. Remove genesis configuration
-> 2
-
-Which folder to save the genesis specs into? (default = current)
-  Will create thissucks.json, thissucks-aleth.json, thissucks-harmony.json, thissucks-parity.json
 > 
-INFO [11-25|22:36:27.544] Saved native genesis chain spec          path=thissucks.json
-ERROR[11-25|22:36:27.549] Failed to create Aleth chain spec        err="unsupported consensus engine"
-ERROR[11-25|22:36:27.550] Failed to create Parity chain spec       err="unsupported consensus engine"
-INFO [11-25|22:36:27.551] Saved genesis chain spec                 client=harmony path=thissucks-harmony.json
-
-What would you like to do? (default = stats)
- 1. Show network stats
- 2. Manage existing genesis
- 3. Track new remote server
- 4. Deploy network components
-> ^C
+> Which accounts should be pre-funded? (advisable at least one)
+> > 0xB23A872E68A9Af470ccB41099310FC1C09F2a268
+> > 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC
+> > 0x
+> 
+> Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)
+> > no
+> 
+> Specify your chain/network ID if you want an explicit one (default = random)
+> > 888
+> INFO [11-25|22:36:10.312] Configured new genesis block 
+> 
+> What would you like to do? (default = stats)
+>  1. Show network stats
+>  2. Manage existing genesis
+>  3. Track new remote server
+>  4. Deploy network components
+> 2
+> 
+>  1. Modify existing configurations
+>  2. Export genesis configurations
+>  3. Remove genesis configuration
+> > 2
+> 
+> Which folder to save the genesis specs into? (default = current)
+>   Will create thissucks.json, thissucks-aleth.json, thissucks-harmony.json, thissucks-parity.json
+> > 
+> INFO [11-25|22:36:27.544] Saved native genesis chain spec          path=thissucks.json
+> ERROR[11-25|22:36:27.549] Failed to create Aleth chain spec        err="unsupported consensus engine"
+> ERROR[11-25|22:36:27.550] Failed to create Parity chain spec       err="unsupported consensus engine"
+> INFO [11-25|22:36:27.551] Saved genesis chain spec                 client=harmony path=thissucks-harmony.json
+> 
+> What would you like to do? (default = stats)
+>  1. Show network stats
+>  2. Manage existing genesis
+>  3. Track new remote server
+>  4. Deploy network components
+> > ^C cancelled out of puppeth to return to the command line in terminal
 </code>
 
 There are two accounts for two nodes, that are in the network with a separate datadir for each, using geth.
@@ -96,20 +96,26 @@ Note: In both instances above, you should start to see the node run, and see the
 
 # How to send/receive a transaction
 1. Open My Crypto Wallet
-2. You are going to need to setup a network to run the transaction on
-3. In the bottom left corner of your MyCrypto GUI you are going to see "Change Network" with an arrow. Click on it.
-4. Now at the bottom of the column of names you will see <code>+ Add Custom Note</code>. Click it. You will a GUI pop up where you can configure this new network. In this case I called it it test net, and set it to the same chain id <code>333</code> that was used to setup the blockchain nodes above.
-![Your Custom Network](setting-up-your-custom-network-testnet.png)
-
-5. At this point if you want to replicate sending a transaction you will need to use your keystore files (they start with UTC) from your nodes you created above to open a wallet. From the Change Wallet main screen in MyCrypto select keystore file block.
-
-![Keystore](use-mycrypto-gui-to-select-keystore-file.png)
-
-Then click on "SELECT WALLET FILE" to unlock your keystore file. Go find your keystore file in your blockchain tooks folder that you saved everything to from part one. Use node 1 keystore.
-
+2. You are going to need to setup the "thissucks" network, in mycrypto, to run the transaction on that network. So do the following:
+- Click on "Change network" in the bottom left corner of the my crypto GUI
+- You'll see a list of networks on the left nav bar of the my crypto GUI, scroll all the way to the bottom and you'll see "+ Add Custom Node"
+- When you click on it, it opens a pop-up interface that invites you to "Setup your custom node"
+- Be sure that the "Network" dropdown on the right side of this pop-up is selected to "Custom"; once you've confirmed that, fill in the interfact like this, with the "Node Name" you generated in the steps above:
+![Setting Up the Custom Network](setting-up-your-custom-network-testnet.png)
+3. In our case, the Network is called "thissucks" and it is set to a chain id of<code>888</code> (you can see this above in the network setup print out, in the section, "How to Start the Network" that was used to setup the blockchain nodes above.
+4. At this point if you want to replicate sending a transaction you will need to use your keystore files (they start with UTC) from your nodes you created above to open a wallet. From the Change Wallet main screen in MyCrypto select keystore file block.
+5. Then click on "SELECT WALLET FILE" to unlock the wallet using the keystore files for **node1z** that you can find in the <code>blockchain-tools, folder node1z, folder keystore, file UTC--(the rest of the file number here)</code> directory in this repository. Once you've selected the UTC keystore file, and it has loaded, enter the password, and go ahead and click "Unlock".
 ![Keystore](use-the-keystore-file.png)
+6. Your wallet should open. And look something like this:
+![Ready to send a transaction](crypto-wallet-1-ready-to-transact-on-thissucks.png)
+Once you open the wallet, you can send a transaction from this wallet account your are in (see above nodes one account: 0xB23A872E68A9Af470ccB41099310FC1C09F2a268) wallet 1 to wallet 2 (see above for node2z account: 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC).
+7. Try to do this now by selecting the amount. Make sure you are on your custom network. You should get a pop-up in the mycrypto GUI to confirm the transaction you have setup:
+![Confirm This Transaction](confirm-transaction-screen.png)
+8. Once you send the transaction you will get a green confirmation block in the MyCrypto GUI, and **pause here do not "X" out of this box**:
+![Green confirmation box](green-confirmation-transaction-mycrypto.png)
+9. If you click on the green confirmation box to check the status of the transaction you will receive a warning that you are leaving the wallet, but go ahead and do so/accept. You now have the hash for he transaction so you can check to see when it goes through.
+![Check Transaction Status](check-transaction-status.png)
+![Transaction Status Pending](transaction-submitted-status-pending.png)
+10. You now have the hash to check the status of the transaction anytime. You can go to https://etherscan.io/ and check the status by hash anytime.
 
-Once you open the wallet you can send a transaction from wallet 1 to wallet 2. Try to do this now by selecting the amount. Make sure you are on your custom network. If you don't have any money in any of your Ethereum accounts, you'll need to reach out for help on how to fix that. That was never made clear how exactly to get Ehtereum into the accounts to send a transaction - it was either there or it wasn't.
-
-If there's Ethereum there go ahead and send a transaction. Every transaction will produce a hash. This hash can be entered into https://etherscan.io/ to see the status of the transaction.
 
