@@ -101,21 +101,21 @@ Note: In both instances above, you should start to see the node run, and see the
 - You'll see a list of networks on the left nav bar of the my crypto GUI, scroll all the way to the bottom and you'll see "+ Add Custom Node"
 - When you click on it, it opens a pop-up interface that invites you to "Setup your custom node"
 - Be sure that the "Network" dropdown on the right side of this pop-up is selected to "Custom"; once you've confirmed that, fill in the interfact like this, with the "Node Name" you generated in the steps above:
-![Setting Up the Custom Network](setting-up-your-custom-network-testnet.png)
+![Setting Up the Custom Network](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/setting-up-your-custom-network-testnet.png)
 3. In our case, the Network is called "thissucks" and it is set to a chain id of<code>888</code> (you can see this above in the network setup print out, in the section, "How to Start the Network" that was used to setup the blockchain nodes above.
 4. At this point if you want to replicate sending a transaction you will need to use your keystore files (they start with UTC) from your nodes you created above to open a wallet. From the Change Wallet main screen in MyCrypto select keystore file block.
 5. Then click on "SELECT WALLET FILE" to unlock the wallet using the keystore files for **node1z** that you can find in the <code>blockchain-tools, folder node1z, folder keystore, file UTC--(the rest of the file number here)</code> directory in this repository. Once you've selected the UTC keystore file, and it has loaded, enter the password, and go ahead and click "Unlock".
-![Keystore](use-the-keystore-file.png)
+![Keystore](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/use-the-keystore-file.png)
 6. Your wallet should open. And look something like this:
-![Ready to send a transaction](crypto-wallet-1-ready-to-transact-on-thissucks.png)
+![Ready to send a transaction](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/crypto-wallet-1-ready-to-transact-on-thissucks.png)
 Once you open the wallet, you can send a transaction from this wallet account your are in (see above nodes one account: 0xB23A872E68A9Af470ccB41099310FC1C09F2a268) wallet 1 to wallet 2 (see above for node2z account: 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC).
 7. Try to do this now by selecting the amount. Make sure you are on your custom network. You should get a pop-up in the mycrypto GUI to confirm the transaction you have setup:
-![Confirm This Transaction](confirm-transaction-screen.png)
+![Confirm This Transaction](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/confirm-transaction-screen.png)
 8. Once you send the transaction you will get a green confirmation block in the MyCrypto GUI, and **pause here do not "X" out of this box**:
-![Green confirmation box](green-confirmation-transaction-mycrypto.png)
+![Green confirmation box](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/green-confirmation-transaction-mycrypto.png)
 9. If you click on the green confirmation box to check the status of the transaction you will receive a warning that you are leaving the wallet, but go ahead and do so/accept. You now have the hash for he transaction so you can check to see when it goes through.
-![Check Transaction Status](check-transaction-status.png)
-![Transaction Status Pending](transaction-submitted-status-pending.png)
+![Check Transaction Status](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/check-transaction-status.png)
+![Transaction Status Pending](https://github.com/kellyerogers/proof-authority-development-chain/blob/main/Blockchain-Tools/Screenshots/transaction-submitted-status-pending.png)
 10. You now have the hash to check the status of the transaction anytime. You can go to https://etherscan.io/ and check the status by hash anytime.
 
 
