@@ -1,0 +1,606 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AndaleMono;\f2\fswiss\fcharset0 ArialMT;
+\f3\froman\fcharset0 Times-Roman;\f4\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red0\green0\blue0;\red47\green180\blue29;
+\red159\green160\blue28;\red180\green36\blue25;\red22\green21\blue22;\red246\green246\blue246;\red38\green38\blue38;
+\red249\green249\blue249;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c15686\c99608\c7843;\csgray\c0\c90000;\cssrgb\c20239\c73899\c14948;
+\cssrgb\c68469\c68013\c14209;\cssrgb\c76410\c21699\c12524;\cssrgb\c11373\c10980\c11373;\cssrgb\c97255\c97255\c97255;\cssrgb\c20000\c20000\c20000;
+\cssrgb\c98039\c98039\c98039;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww25400\viewh13700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 The Network for running this blockchain is called \'93thissucks\'94.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Please specify a network name to administer (no spaces, hyphens or capital letters please)\
+> thissucks\
+\
+Sweet, you can set this via --network=thissucks next time!\
+\
+\cf4 INFO \cf2 [11-25|22:34:06.898] Administering Ethereum network           \cf4 name\cf2 =thissucks\
+\cf5 WARN \cf2 [11-25|22:34:06.901] No previous configurations found         \cf5 path\cf2 =/Users/kellyerogers/.puppeth/thissucks\
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Configure new genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> 2\
+\
+What would you like to do? (default = create)\
+ 1. Create new genesis from scratch\
+ 2. Import already existing genesis\
+> 1\
+\
+Which consensus engine to use? (default = clique)\
+ 1. Ethash - proof-of-work\
+ 2. Clique - proof-of-authority\
+> 2\
+\
+How many seconds should blocks take? (default = 15)\
+> \
+\
+Which accounts are allowed to seal? (mandatory at least one)\
+> 0xB23A872E68A9Af470ccB41099310FC1C09F2a268\
+> 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC\
+> 0x\
+\
+Which accounts should be pre-funded? (advisable at least one)\
+> 0xB23A872E68A9Af470ccB41099310FC1C09F2a268\
+> 0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC\
+> 0x\
+\
+Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)\
+> no\
+\
+Specify your chain/network ID if you want an explicit one (default = random)\
+> 888\
+\cf4 INFO \cf2 [11-25|22:36:10.312] Configured new genesis block \
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Manage existing genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> 2\
+\
+ 1. Modify existing configurations\
+ 2. Export genesis configurations\
+ 3. Remove genesis configuration\
+> 2\
+\
+Which folder to save the genesis specs into? (default = current)\
+  Will create thissucks.json, thissucks-aleth.json, thissucks-harmony.json, thissucks-parity.json\
+> \
+\cf4 INFO \cf2 [11-25|22:36:27.544] Saved native genesis chain spec          \cf4 path\cf2 =thissucks.json\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 ERROR\cf2 [11-25|22:36:27.549] Failed to create Aleth chain spec        \cf6 err\cf2 ="unsupported consensus engine"\
+\cf6 ERROR\cf2 [11-25|22:36:27.550] Failed to create Parity chain spec       \cf6 err\cf2 ="unsupported consensus engine"\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-25|22:36:27.551] Saved genesis chain spec                 \cf4 client\cf2 =harmony \cf4 path\cf2 =thissucks-harmony.json\
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Manage existing genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> ^C\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ./geth --datadir node1z account new\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0xB23A872E68A9Af470ccB41099310FC1C09F2a268\
+Path of the secret key file: node1z/keystore/UTC--2020-11-26T03-30-46.971532000Z--b23a872e68a9af470ccb41099310fc1c09f2a268\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf7 \cb8 \expnd0\expndtw0\kerning0
+./geth --datadir node2z account new\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0xD13f6209A3e0c52Fc49f945c3587B145FDeEE4fC\
+Path of the secret key file: node2z/keystore/UTC--2020-11-26T03-31-53.140997000Z--d13f6209a3e0c52fc49f945c3587b145fdeee4fc\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0\fs30 \cf7 \cb8 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+Attempts on 11/23/2020\
+\
+Network is znetwork.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Sweet, you can set this via --network=znetwork next time!\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|12:36:53.231] Administering Ethereum network           \cf4 name\cf2 =znetwork\
+\cf5 WARN \cf2 [11-23|12:36:53.232] No previous configurations found         \cf5 path\cf2 =/Users/kellyerogers/.puppeth/znetwork\
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Configure new genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> 2\
+\
+What would you like to do? (default = create)\
+ 1. Create new genesis from scratch\
+ 2. Import already existing genesis\
+> 1\
+\
+Which consensus engine to use? (default = clique)\
+ 1. Ethash - proof-of-work\
+ 2. Clique - proof-of-authority\
+> 2\
+\
+How many seconds should blocks take? (default = 15)\
+> \
+\
+Which accounts are allowed to seal? (mandatory at least one)\
+> 0x86d2145715a682ee4d61db7e426024c8eee93972\
+> 0xb9170050b430b6c08a1d80f56a879f5fa1a5fb4d\
+> 0x\
+\
+Which accounts should be pre-funded? (advisable at least one)\
+> 0x86d2145715a682ee4d61db7e426024c8eee93972\
+> 0xb9170050b430b6c08a1d80f56a879f5fa1a5fb4d\
+> 0x\
+\
+Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)\
+> yes\
+\
+Specify your chain/network ID if you want an explicit one (default = random)\
+> 444\
+\cf4 INFO \cf2 [11-23|12:56:46.982] Configured new genesis block \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\
+Now you want to export your genesis creation in a json file.\
+You are going to manage existing genesis and then choose the export genesis config\
+\
+At this point I did get an error that might be worth noting\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf4 \cb3 \CocoaLigature0 INFO \cf2 [11-23|12:56:46.982] Configured new genesis block \
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Manage existing genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> 2\
+\
+ 1. Modify existing configurations\
+ 2. Export genesis configurations\
+ 3. Remove genesis configuration\
+> 2\
+\
+Which folder to save the genesis specs into? (default = current)\
+  Will create znetwork.json, znetwork-aleth.json, znetwork-harmony.json, znetwork-parity.json\
+> cd custom out-of-the-box blockchain zbank\
+\cf4 INFO \cf2 [11-23|13:22:42.585] Saved native genesis chain spec          \cf4 path\cf2 ="cd custom out-of-the-box blockchain zbank/znetwork.json"\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 ERROR\cf2 [11-23|13:22:42.586] Failed to create Aleth chain spec        \cf6 err\cf2 ="unsupported consensus engine"\
+\cf6 ERROR\cf2 [11-23|13:22:42.586] Failed to create Parity chain spec       \cf6 err\cf2 ="unsupported consensus engine"\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|13:22:42.593] Saved genesis chain spec                 \cf4 client\cf2 =harmony \cf4 path\cf2 ="cd custom out-of-the-box blockchain zbank/znetwork-harmony.json"
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+Node1 Addresses\
+password: class\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0x1ac56ba4F4beD57DDE06cE3D752bfC0A2038AAB6\
+Path of the secret key file: node1/keystore/UTC--2020-11-24T00-04-49.395977000Z--1ac56ba4f4bed57dde06ce3d752bfc0a2038aab6\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Node2 Addresses\
+password: class\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0x076fc14A01422DE51E9a75cB97fE08c85234559A\
+Path of the secret key file: node2/keystore/UTC--2020-11-24T00-06-50.188307000Z--076fc14a01422de51e9a75cb97fe08c85234559a\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\
+After creating these nodes, get them running. Get running node1\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 (ethereum) Kellyes-MacBook:Blockchain-Tools kellyerogers$ ./geth --datadir nodeonez --mine --minerthreads 1 --rpc
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Node One Z (this didn\'92t work because I messed up the password\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 (base) Kellyes-MacBook:Blockchain-Tools kellyerogers$ ./geth account new directory nodeonez\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|16:45:35.606] Maximum peer count                       \cf4 ETH\cf2 =50 \cf4 LES\cf2 =0 \cf4 total\cf2 =50\
+Your new account is locked with a password. Please give a password. Do not forget this password.\
+Password: \
+Repeat password: \
+\
+Your new key was generated\
+\
+Public address of the key:   0xef19D330ec0Ca474A7cf9085da310DcB4eF91848\
+Path of the secret key file: /Users/kellyerogers/Library/Ethereum/keystore/UTC--2020-11-23T21-45-53.157467000Z--ef19d330ec0ca474a7cf9085da310dcb4ef91848\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Node Two Z Addresses\
+password: h0m3w0RK@cc0uNt\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 (base) Kellyes-MacBook:Blockchain-Tools kellyerogers$ ./geth account new directory nodetwoz\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|16:47:52.542] Maximum peer count                       \cf4 ETH\cf2 =50 \cf4 LES\cf2 =0 \cf4 total\cf2 =50\
+Your new account is locked with a password. Please give a password. Do not forget this password.\
+Password: \
+Repeat password: \
+\
+Your new key was generated\
+\
+Public address of the key:   0x09e4f92eeCdc12DE813E026345fB5970d15AFf43\
+Path of the secret key file: /Users/kellyerogers/Library/Ethereum/keystore/UTC--2020-11-23T21-48-22.478397000Z--09e4f92eecdc12de813e026345fb5970d15aff43\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+PAST ATTEMPTS\
+Creating account/node 1:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 (base) Kellyes-MacBook:Blockchain-Tools kellyerogers$ ./geth account new --datadir node1\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|13:28:17.817] Maximum peer count                       \cf4 ETH\cf2 =50 \cf4 LES\cf2 =0 \cf4 total\cf2 =50\
+Your new account is locked with a password. Please give a password. Do not forget this password.\
+Password: \
+Repeat password: \
+\
+Your new key was generated\
+\
+Public address of the key:   0xa5aD71EaD4801A2f25b932194bbc2BD2939131bD\
+Path of the secret key file: node1/keystore/UTC--2020-11-23T18-28-55.692094000Z--a5ad71ead4801a2f25b932194bbc2bd2939131bd\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!\
+\
+(base) Kellyes-MacBook:Blockchain-Tools kellyerogers$ 
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+Creating account node 2\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 (base) Kellyes-MacBook:Blockchain-Tools kellyerogers$ ./geth account new --datadir node2\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-23|13:31:44.456] Maximum peer count                       \cf4 ETH\cf2 =50 \cf4 LES\cf2 =0 \cf4 total\cf2 =50\
+Your new account is locked with a password. Please give a password. Do not forget this password.\
+Password: \
+Repeat password: \
+\
+Your new key was generated\
+\
+Public address of the key:   0x27B96f96D308212eF2d774a0007F427137A01Da8\
+Path of the secret key file: node2/keystore/UTC--2020-11-23T18-32-16.584600000Z--27b96f96d308212ef2d774a0007f427137a01da8\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 https://www.bootcampspot.com/sessions/1122816/videos/102844\
+https://zoom.us/rec/play/N4pPpSLGwl9zcd_iHjB0jOzr7d8_Z2PL2sVl2IILqSVUrs_kmKwffSt1cgd5X3JaTTVYpHB9I15SlcAe.XTpvJxI8mrGCilQj?continueMode=true&_x_zm_rtaid=REz5JFZ0RtKUyiBuw6OGAA.1606146500918.54a0b7e023be2d3e11ceacd145b31ed5&_x_zm_rhtaid=306\
+https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-fin-pt-06-2020-u-c/tree/master/02-Homework/18-Blockchain/Instructions\
+https://github.com/kellyerogers/proof-authority-development-chain\
+\
+\
+PREVIOUS ATTEMPTS\
+\
+Set up your custom testnet blockchain.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screen Shot 2020-11-15 at 6.28.17 PM.png \width15340 \height2180 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+The name of my network is testnet\
+\
+> testnet\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Please specify a network name to administer (no spaces, hyphens or capital letters please)\
+> testnet\
+\
+Sweet, you can set this via --network=testnet next time!\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 INFO \cf2 [11-15|18:27:42.116] Administering Ethereum network           \cf4 name\cf2 =testnet\
+\cf5 WARN \cf2 [11-15|18:27:42.124] No previous configurations found         \cf5 path\cf2 =/Users/kellyerogers/.puppeth/testnet\
+\
+What would you like to do? (default = stats)\
+ 1. Show network stats\
+ 2. Configure new genesis\
+ 3. Track new remote server\
+ 4. Deploy network components\
+> 2\
+\
+What would you like to do? (default = create)\
+ 1. Create new genesis from scratch\
+ 2. Import already existing genesis\
+> 1\
+\
+Which consensus engine to use? (default = clique)\
+ 1. Ethash - proof-of-work\
+ 2. Clique - proof-of-authority\
+> 2\
+\
+How many seconds should blocks take? (default = 15)\
+> 15\
+\
+Which accounts are allowed to seal? (mandatory at least one)\
+> 0x09e1eF0CC6f97a2Ca816f6717Aa147E8A8fD488f\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\
+You created a wallet\
+password: h0m3w0RK@cc0uNt\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+This is the private key for the wallet you created\
+ea071226291a722b52791dd98797befc504dfae63402f19ada057f0f25c6f2c6\
+\
+You wallet account number\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf9 \cb10 \expnd0\expndtw0\kerning0
+0x09e1eF0CC6f97a2Ca816f6717Aa147E8A8fD488f
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Your chain/network ID\
+333\
+\
+\
+Next I created two nodes with accounts\
+(base) Kellyes-MacBook:Blockchain-Tools-Homework kellyerogers$ ./geth account new --datadir node1\
+INFO [11-01|20:50:54.145] Maximum peer count                       ETH=50 LES=0 total=50\
+Your new account is locked with a password. Please give a password. Do not forget this password.\
+Password: h0m3w0RK@cc0uNt\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs48 \cf0 Create two nodes\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \
+I setup the two nodes.\
+\
+node1 key\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0x22c28201d635359f9069528188F962153Da92Daf\
+Path of the secret key file: node1/keystore/UTC--2020-11-23T03-32-29.755011000Z--22c28201d635359f9069528188f962153da92daf\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+node 2 key\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Your new key was generated\
+\
+Public address of the key:   0xFC143D63e98e4Ea6a6Ee4E2524A231095516f0cD\
+Path of the secret key file: node2/keystore/UTC--2020-11-23T03-34-42.404229000Z--fc143d63e98e4ea6a6ee4e2524a231095516f0cd\
+\
+- You can share your public address with anyone. Others need it to interact with you.\
+- You must NEVER share the secret key with anyone! The key controls access to your funds!\
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!\
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+Make sure to keep track of the node's addresses and which belongs to which. You can always fetch the address later by printing the keystore file in the node's folder like so:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 node1/keystore/UTC--2020-11-23T03-32-29.755011000Z--22c28201d635359f9069528188f962153da92daf
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 node2/keystore/UTC--2020-11-23T03-34-42.404229000Z--fc143d63e98e4ea6a6ee4e2524a231095516f0cd
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+This will output something like:\
+\{"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":\{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":\{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"\},"kdf":"scrypt","kdfparams":\{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"\},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"\},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3\}\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs48 \cf11 \expnd0\expndtw0\kerning0
+Initialize each node with the new testnet.json with geth.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs36 \cf11 \expnd0\expndtw0\kerning0
+Start Node 1
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf11 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Launch the first node into mining mode with the following command:\
+\pard\pardeftab720\partightenfactor0
+\cf11 ./geth --datadir node1 --mine --minerthreads 1
+\f4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 Start node 2 and use the node from node 1
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 enode://cf836322b929835817e7c7766fc4300af46cca1c1eedebe2171340e49c71f0c1a5743c0ef00c8ac0426c16f5ff19671293f84eb3460e0318f08e9a3c08af0ecc@127.0.0.1:30303\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+Send a test transaction.\
+\
+Create a repository.\
+\
+Write instructions on how to use the chain for the rest of your team.}
